@@ -1,6 +1,6 @@
 # @ux-ui/biome-config
 
-Shared [Biome](https://biomejs.dev) configuration for the `ux-ui-pro` npm portfolio. Encodes the
+Shared [Biome](https://biomejs.dev) configuration for the `nilmuse` npm portfolio. Encodes the
 single linter/formatter standard (`assembly.md` §4.8/§7) so every package inherits it via `extends`.
 
 ---

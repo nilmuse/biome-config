@@ -1,18 +1,18 @@
 {
   "name": "@ux-ui/biome-config",
-  "version": "0.1.0",
-  "description": "Shared Biome configuration for the ux-ui-pro npm portfolio (assembly.md §4.8/§7).",
+  "version": "0.1.1",
+  "description": "Shared Biome configuration for the nilmuse npm portfolio (assembly.md §4.8/§7).",
   "type": "module",
-  "author": "ux-ui.pro",
+  "author": "Maxim <m@nilmuse.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ux-ui-pro/biome-config.git"
+    "url": "git+https://github.com/nilmuse/biome-config.git"
   },
   "bugs": {
-    "url": "https://github.com/ux-ui-pro/biome-config/issues"
+    "url": "https://github.com/nilmuse/biome-config/issues"
   },
-  "homepage": "https://github.com/ux-ui-pro/biome-config",
+  "homepage": "https://github.com/nilmuse/biome-config",
   "packageManager": "npm@10.9.3",
   "engines": {
     "node": ">=20.19.0"
@@ -47,6 +47,6 @@
     "linter",
     "formatter",
     "config",
-    "ux-ui-pro"
+    "nilmuse"
   ]
 }
