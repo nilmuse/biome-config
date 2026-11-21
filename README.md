@@ -1,4 +1,4 @@
-# @ux-ui/biome-config
+# @nilmuse/biome-config
 
 Shared [Biome](https://biomejs.dev) configuration for the `nilmuse` npm portfolio. Encodes the
 single linter/formatter standard (`assembly.md` §4.8/§7) so every package inherits it via `extends`.
@@ -8,7 +8,7 @@ single linter/formatter standard (`assembly.md` §4.8/§7) so every package inhe
 ## Installation
 
 ```bash
-npm install -D @ux-ui/biome-config @biomejs/biome
+npm install -D @nilmuse/biome-config @biomejs/biome
 ```
 
 ---
@@ -19,7 +19,7 @@ In a package `biome.json`:
 
 ```json
 {
-  "extends": ["@ux-ui/biome-config/biome"]
+  "extends": ["@nilmuse/biome-config/biome"]
 }
 ```
 
