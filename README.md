@@ -1,7 +1,10 @@
 # @nilmuse/biome-config
 
-Shared [Biome](https://biomejs.dev) configuration for the `nilmuse` npm portfolio. Encodes the
-single linter/formatter standard (`assembly.md` §4.8/§7) so every package inherits it via `extends`.
+Shared [Biome](https://biomejs.dev) formatting and lint rules for the `nilmuse` npm packages.
+Use `extends` to apply the same rules across projects and override them where needed.
+
+[![npm](https://img.shields.io/npm/v/@nilmuse/biome-config.svg?colorB=brightgreen)](https://www.npmjs.com/package/@nilmuse/biome-config)
+[![NPM Downloads](https://img.shields.io/npm/dm/@nilmuse/biome-config.svg?style=flat)](https://www.npmjs.com/package/@nilmuse/biome-config)
 
 ---
 
@@ -11,11 +14,11 @@ single linter/formatter standard (`assembly.md` §4.8/§7) so every package inhe
 npm install -D @nilmuse/biome-config @biomejs/biome
 ```
 
----
+Requires Biome 2.4 or later.
 
-## Usage
+## Quick start
 
-In a package `biome.json`:
+Create `biome.json` in your project:
 
 ```json
 {
@@ -23,14 +26,25 @@ In a package `biome.json`:
 }
 ```
 
-Biome resolves the package from `node_modules` (Biome 2.4+). Paths and globs in the consuming
-config stay relative to that consuming `biome.json`.
+Then check your source files:
 
-The shared config sets the formatter (2-space, width 100, `lf`, single quotes, always semicolons,
-trailing commas) and the recommended linter rules plus `noUnusedVariables`, `noExplicitAny` (warn)
-and `noUselessTypeConstraint`. Override per package as needed after the `extends`.
+```bash
+npx biome check src
+```
 
----
+Biome resolves the shared config from `node_modules`. Paths and globs in your config stay
+relative to your own `biome.json`.
+
+## Configuration
+
+The formatter uses two spaces, a line width of 100, LF line endings, single quotes, semicolons,
+trailing commas, and parentheses around arrow-function parameters.
+
+The linter enables the recommended rules. `noUnusedVariables` and `noUselessTypeConstraint`
+are errors; `noExplicitAny` is a warning. Import organization is enabled through Biome assist.
+
+To change a setting for one project, add the corresponding field alongside `extends` in that
+project's `biome.json`.
 
 ## License
 
